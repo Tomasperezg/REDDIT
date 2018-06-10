@@ -6,10 +6,12 @@
       redditService.getData().then(function(response){
         vm.data = response.data;
       });
+      console.log(vm.data);
     },
-    template: `
-    <button ng-click="$ctrl.getData()">Get Data</button>`
+    templateUrl: "reddit.html"
   }
+  reddit.$inject = ["redditService"];
+
   angular
     .module("app")
     .component("reddit", reddit);

@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html ng-app="app">
 <head>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 <body>
 
   {{4+3}}
-
-  <reddit></reddit>
+  <h1>this is the home page<h1>
+  <!-- <a href="#!/home">HOME</a> -->
+  <a href="#!/display">somewhere</a>
+  <ng-view></ng-view>
 
    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.js"></script>
    <script src="reddit-module.js"></script>
+   <script src="router.js"></script>
    <script src="reddit-service.js"></script>
    <script src="reddit.js"></script>
+   
 </body>
 </html>
